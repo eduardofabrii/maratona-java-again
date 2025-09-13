@@ -13,7 +13,12 @@ public class Aula02TiposPrimitivos {
         long salarioLong = 100000;
         boolean isVerdadeiro = true;
 
+        String nome = "Eduardo";
+        String texto = "Habla mucho my hermano pode ser ilimitado a Stringgggg :))";
+
         System.out.println(age);
         System.out.println(salarioFloat);
+        System.out.println(nome);
+        System.out.println(texto);
     }
 }
