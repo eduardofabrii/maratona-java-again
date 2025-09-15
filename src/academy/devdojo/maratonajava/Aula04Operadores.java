@@ -45,5 +45,33 @@ public class Aula04Operadores {
 
         boolean isPlaystation5Compravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
         System.out.println("Playstation é compravel: " + isPlaystation5Compravel);
+
+        // = += -= *= /= %=
+        double bonus = 1000;
+        System.out.println("Bonus 1: " + bonus);
+        bonus = 2000;
+        System.out.println("Bonus 2: " + bonus);
+        bonus += 200;
+        System.out.println("Bonus 3: " + bonus);
+        bonus -= 200;
+        System.out.println("Bonus 4: " + bonus);
+        bonus /= 2;
+        System.out.println("Bonus 5: " + bonus);
+        bonus %= 3;
+        System.out.println("Bonus 5: " + bonus);
+
+        //
+        int contador = 0;
+        contador += 1;
+        System.out.println(contador);
+        contador++;
+        System.out.println(contador);
+        contador--;
+        System.out.println(contador);
+
+        int contador2 = 0;
+        int contador3 = 0;
+        System.out.println(contador2++);
+        System.out.println(++contador3);
     }
 }
