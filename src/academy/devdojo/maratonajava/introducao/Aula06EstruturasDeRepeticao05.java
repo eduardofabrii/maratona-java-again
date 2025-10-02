@@ -1,17 +1,16 @@
-package academy.devdojo.maratonajava;
+package academy.devdojo.maratonajava.introducao;
 
-public class Aula06EstruturasDeRepeticao04 {
+public class Aula06EstruturasDeRepeticao05 {
     public static void main(String[] args) {
         // Dado um valor de um carro, descubra em quantas vezes ele pode ser parcelado
         // Condicao valorParcela >= 1000
 
         float valorCarro = 35341f;
-        float parcelaMinima = 1000f;
 
-        for (int parcela = 1; parcela <= valorCarro; parcela++) {
+        for (int parcela = (int) valorCarro; parcela >= 1; parcela--) {
             double valorParcela = valorCarro / parcela;
-            if (valorParcela <= parcelaMinima) {
-                break;
+            if (valorParcela < 1000) {
+                continue;
             }
             System.out.println("Parcela " + parcela + " | R$" + valorParcela);
         }
