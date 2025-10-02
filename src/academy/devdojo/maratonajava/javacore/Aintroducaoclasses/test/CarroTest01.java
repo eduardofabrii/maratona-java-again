@@ -7,6 +7,9 @@ public class CarroTest01 {
         Carro carro1 = new Carro("Porsche", "Cayenne", 2025);
         Carro carro2 = new Carro("Gol", "G3", 2007);
 
+        // Variaveis do tipo reference podem referenciar outros objetos do mesmo tipo
+        carro1 = carro2;
+
         System.out.println(carro1.toString());
         System.out.println(carro2.toString());
     }
