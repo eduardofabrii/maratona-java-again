@@ -36,5 +36,21 @@ public class Calculadora {
         System.out.println("num1: " + numero1);
         System.out.println("num2: " + numero2);
     }
+
+    public void somarArray(int[] array) {
+        int soma = 0;
+        for (int i = 0; i < array.length; i++) {
+            soma += array[i];
+        }
+        System.out.println(soma);
+    }
+
+    public void somarVarArgs(int... array) {
+        int soma = 0;
+        for (int i = 0; i < array.length; i++) {
+            soma += array[i];
+        }
+        System.out.println(soma);
+    }
 }
 
