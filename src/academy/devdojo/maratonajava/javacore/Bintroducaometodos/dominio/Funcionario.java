@@ -11,11 +11,12 @@ public class Funcionario {
         this.nome = nome;
         this.idade = idade;
 
-        if (salarios.length > 3) {
-            throw new IllegalArgumentException("Só aceita 3 salarios meu irmao!!!");
-        } else {
-            this.salarios = salarios;
+        if (salarios == null || salarios.length != 3) {
+            throw new IllegalArgumentException("Voce deve passar exatamente 3 salarios cabecao");
         }
+
+        this.salarios = salarios;
+
     }
 
     public void imprimir() {
