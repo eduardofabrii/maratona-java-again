@@ -8,7 +8,7 @@ public class CarroTest01 {
         Carro c2 = new Carro("Mercedes Benz", 285);
         Carro c3 = new Carro("Audi", 290);
 
-        Carro.velocidadeLim = 180;
+        Carro.setVelocidadeLimite(150);
 //        c1.setVelocidadeLim(300); // se mudar um, muda todos pq pertence a classe
 
         System.out.println(c1);
