@@ -10,6 +10,12 @@ public class Funcionario extends Pessoa {
                 '}';
     }
 
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Salário: " + this.salario);
+    }
+
     public double getSalario() {
         return salario;
     }
