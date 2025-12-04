@@ -19,8 +19,8 @@ public class HerancaTest01 {
         // System.out.println(pessoa);
         pessoa.imprimir();
         System.out.println("--------------------------------------------------");
-
         Funcionario funcionario = new Funcionario();
+        
         funcionario.setNome("Joao Paulo");
         funcionario.setCpf("12312312333");
         funcionario.setNome("Joao Paulo");
@@ -31,5 +31,7 @@ public class HerancaTest01 {
         System.out.println("--------------------------------------------------");
 
         // System.out.println(funcionario);
+
+        funcionario.relatorioPagamento();
     }
 }
